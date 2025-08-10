@@ -1,0 +1,2 @@
+cd ~/osrm-backend/build
+./osrm-routed ~/Downloads/western-zone-latest.osrm
