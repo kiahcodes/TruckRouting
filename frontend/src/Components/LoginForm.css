@@ -1,0 +1,137 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.login-image {
+  background-image: url("/truck.jpg");
+  width: 60%;
+  height: 100%;
+  position: relative; /* Required for overlay positioning */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.login-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.login-heading {
+  font-size: 40px;
+  text-shadow: #337ab7;
+}
+
+.login-form-wrapper {
+  width: 40%;
+}
+
+.login-form {
+  text-align: centers;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-flow: column;
+  width: 60%;
+  padding: 40px 15px;
+  border-radius: 10px;
+  margin: 50px auto;
+}
+
+.pass-holder {
+  width: 100%;
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+input {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #337ab7;
+  border-radius: 7px;
+  height: 3vh;
+  color: black;
+  padding: 10px;
+  width: calc(100% - 20px);
+}
+
+input:enabled {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #337ab7;
+  border-radius: 7px;
+  height: 3vh;
+  color: black;
+  padding: 10px;
+  width: calc(100% - 20px);
+}
+
+.error {
+  margin: 0px;
+  font-size: 12px;
+  color: red;
+  text-align: left;
+  width: 100%;
+}
+
+.forgot-pass {
+  width: 100%;
+  text-align: right;
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #337ab7;
+  /* margin-bottom: 15px; */
+}
+
+.forgot-pass:hover {
+  color: #23527c;
+}
+
+button {
+  width: 100%;
+  background-color: #337ab7;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: white;
+  cursor: pointer;
+}
+
+.toggle-link {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.toggle-link span {
+  color: #337ab7;
+  text-decoration: underline;
+  cursor: pointer;
+}

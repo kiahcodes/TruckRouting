@@ -1,0 +1,123 @@
+.routes-info {
+  margin: 2%;
+}
+
+.route-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.route-card:hover {
+  transform: scale(1.02);
+}
+
+.route-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1e3c72;
+  margin-bottom: 0.5rem;
+}
+
+.view-map-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background-color:#337ab7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-map-btn:hover{
+  background-color: #4a91cf;
+  color:white
+}
+
+.routes-layout {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sidebar-days {
+  min-width: 140px;
+  background: #f0f4fa;
+  padding: 1rem 0;
+  border-right: 1px solid #ddd;
+  height: 82.5vh;
+}
+
+.sidebar-days-title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.sidebar-days-list {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-day-btn {
+  width: 100%;
+  padding: 0.5rem 0;
+  background: transparent;
+  color: #1e3c72;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  border:1px solid rgb(233, 231, 231);
+  transition: background 0.2s;
+}
+
+.sidebar-day-btn:hover {
+  color:white;
+}
+
+.sidebar-day-btn.selected {
+  background: #337ab7;
+  color: white;
+  font-weight: 700;
+}
+
+.routes-main-content {
+  flex: 1;
+}
+
+.route-card-single {
+  border: 2px solid #2a5298;
+  box-shadow: 0 6px 16px rgba(30,60,114,0.10);
+}
+
+.route-cards-overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.route-card-overview {
+  cursor: pointer;
+  flex: 1 1 320px;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.route-card-overview .route-title {
+  /* Optionally, style differently */
+}
+
+.route-card-overview .route-title {
+  /* Optionally, style differently */
+}
+
+.route-card-overview em {
+  color: #888;
+  font-size: 0.95em;
+}

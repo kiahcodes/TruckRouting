@@ -1,0 +1,220 @@
+.view-routes-header {
+  color: #337ab7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.view-routes-header select {
+  padding: 0.35rem 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #bfc9d1;
+  font-size: 1rem;
+  background: #f8f9fa;
+  color: #1e3c72;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.view-routes-header select:focus {
+  border: 1.5px solid #337ab7;
+}
+
+.day-btn, .reset-btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 24px;
+  border: none;
+  background: linear-gradient(90deg, #337ab7 60%, #4a91cf 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 0 0.3rem 0.5rem 0;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(51, 122, 183, 0.08);
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+.day-btn.selected {
+  background: linear-gradient(90deg, #4a91cf 60%, #337ab7 100%);
+  transform: scale(1.08);
+  box-shadow: 0 4px 16px rgba(51, 122, 183, 0.18);
+}
+.day-btn:hover, .reset-btn:hover {
+  background: linear-gradient(90deg, #285a8c 60%, #337ab7 100%);
+}
+.reset-btn {
+  background: #fff;
+  color: #337ab7;
+  border: 1.5px solid #337ab7;
+  margin-left: 0.5rem;
+}
+.reset-btn:hover {
+  background: #337ab7;
+  color: #fff;
+}
+
+.truck-cards-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 0.5rem 0;
+}
+.truck-card {
+  background: #f8f9fa;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(51, 122, 183, 0.08);
+  padding: 1.1rem 1.5rem;
+  min-width: 180px;
+  max-width: 220px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.2s, box-shadow 0.2s, transform 0.15s;
+  text-align: center;
+  position: relative;
+}
+.truck-card.selected {
+  border: 2px solid #337ab7;
+  box-shadow: 0 4px 16px rgba(51, 122, 183, 0.18);
+  transform: scale(1.06);
+}
+.truck-card .truck-icon {
+  font-size: 2.1rem;
+  margin-bottom: 0.3rem;
+  color: #337ab7;
+}
+.truck-card .truck-title {
+  font-weight: 700;
+  color: #285a8c;
+  margin-bottom: 0.2rem;
+}
+.truck-card .truck-info {
+  color: #444;
+  font-size: 0.98rem;
+  margin-bottom: 0.1rem;
+}
+
+.map-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  width: 100%;
+}
+.map-container {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(51, 122, 183, 0.13);
+  background: #fff;
+}
+@media (max-width: 900px) {
+  .map-wrapper > .map-container {
+    width: 95vw !important;
+    height: 50vh !important;
+  }
+  .truck-cards-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.info-message {
+  color: #888;
+  font-size: 1.1em;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.stats-bar {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 2rem 0 1.2rem 0;
+  flex-wrap: wrap;
+}
+.stat-card-map {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(51, 122, 183, 0.08);
+  padding: 1.1rem 2.2rem;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+.stat-card-map .stat-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+  color: #337ab7;
+}
+.stat-card-map .stat-label {
+  color: #888;
+  font-size: 0.98rem;
+}
+.stat-card-map .stat-value {
+  font-weight: 700;
+  color: #285a8c;
+  font-size: 1.25rem;
+}
+
+.route-distribution {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(51, 122, 183, 0.06);
+  padding: 1.2rem 2rem 1.2rem 2rem;
+  margin: 0 auto 1.5rem auto;
+  max-width: 700px;
+}
+.route-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.7rem;
+  gap: 1rem;
+}
+.route-bar-label {
+  min-width: 110px;
+  font-weight: 600;
+  color: #337ab7;
+}
+.route-bar-progress {
+  flex: 1;
+  height: 10px;
+  border-radius: 6px;
+  background: #e6eaf3;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+.route-bar-progress-inner {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.4s;
+}
+.route-bar-value {
+  min-width: 120px;
+  color: #444;
+  font-size: 0.98rem;
+}
+
+.route-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0 1rem 0;
+}
+.route-filter-btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 24px;
+  border: none;
+  background: #e6eaf3;
+  color: #337ab7;
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.route-filter-btn.selected {
+  background: linear-gradient(90deg, #337ab7 60%, #4a91cf 100%);
+  color: #fff;
+}
